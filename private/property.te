@@ -79,7 +79,7 @@ system_restricted_prop(persist_sysui_ranking_update_prop)
 treble_sysprop_neverallow(`
 
 enforce_sysprop_owner(`
-  neverallow domain {
+  neverallow { domain -init -dumpstate }{
     property_type
     -system_property_type
     -product_property_type
